@@ -120,7 +120,7 @@
 
       const firstUlDisappear = function () {
         document.getElementById('firstList').remove()
-      };
+      }
       firstUlDisappear()
 
       /* EXERCISE 8
@@ -129,7 +129,7 @@
 
       const paintItGreen = function () {
         document.getElementById('secondList').style.backgroundColor = 'green'
-      };
+      }
 
       paintItGreen()
 
@@ -139,7 +139,7 @@
 
       const makeItClickable = function () {
         document.body.style.backgroundColor = 'orange'
-      };
+      }
 
       /* EXERCISE 10
        Change the footer text with something else when the user clicks on it.
@@ -160,10 +160,12 @@
        Create a welcome alert message when the page successfully loads.
       */
 
+      const alertHi = function () {
+            alert("Hello and Welcome!")
+        }
       window.onload = function () {
-        //
-      };
-
+            alertHi()
+        }
       /* EXERCISE 13
        Use HTML5 tags to properly provide semantic meaning to the different portions of the page.
       */

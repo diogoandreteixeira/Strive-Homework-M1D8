@@ -9,7 +9,7 @@
   </head>
   <body>
     <div>
-      <h1>This is the title of the page</h1>
+      <h1 id="title-id" >This is the title of the page</h1>
       <h2>This is the subtitle of the page</h2>
     </div>
 
@@ -30,7 +30,7 @@
 
       <a href="strive.school">This link goes to Strive School</a>
 
-      <div>
+      <div id = 'onlyP'>
         <p>This text is just for the exercise</p>
       </div>
 
@@ -56,9 +56,8 @@
       */
 
       const changeTitle = function (newTitle) {
-        //
+        newTitle = document.getElementById("title-id").innerText = 'new title'
       };
-
       /* EXERCISE 2
        Write a function for changing the class of the title of the page in "myHeading".
       */
@@ -72,7 +71,7 @@
       */
 
       const changePcontent = function () {
-        //
+        let text = document.getElementById("onlyP").childNodes[0].innerText = 'This was funny! Just kidding...';
       };
 
       /* EXERCISE 4
@@ -80,8 +79,13 @@
       */
 
       const changeUrls = function () {
-        //
+        document.getElementById('')
       };
+
+      function changeLink(){
+    document.getElementById("strive.school").href = "https://www.google.com";
+    document.getElementById("strive.school").innerHTML = "Google";
+    }
 
       /* EXERCISE 5
        Write a function for adding a new list item in the second unordered list.

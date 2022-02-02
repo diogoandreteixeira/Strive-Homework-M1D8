@@ -90,10 +90,22 @@
       /* EXERCISE 5
        Write a function for adding a new list item in the second unordered list.
       */
+      const addToTheSecond = function () {
+        let node = document.createElement("li")
+        let textnode = document.createTextNode("4th")
+        node.appendChild(textnode)
+        document.getElementById("secondList").appendChild(node)
+      }
 
-      const addToTheSecond = function (content) {
-        //
+      addToTheSecond()
+
+       /*  const addToTheSecond = function (content) {
+        let text = document.getElementById("secondlist").childNodes[4].appendChild = 'This was funny! Just kidding...';
       };
+      };
+
+      addToTheSecond() */
+ 
 
       /* EXERCISE 6
        Write a function for adding a second paragraph to the first div.

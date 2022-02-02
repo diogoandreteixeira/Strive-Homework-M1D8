@@ -153,10 +153,13 @@
        Attach an event listener to the input field in the page for console logging its value just after any keystroke.
       */
 
-      const inputField = document.getElementById("input-field");
-      // ...
+      document.getElementById('input-field').addEventListener('keypress', attachEventListener)
 
-      /* EXERCISE 12
+      function attachEventListener() {
+        document.getElementById('input-field')
+      }
+
+        /* EXERCISE 12
        Create a welcome alert message when the page successfully loads.
       */
 

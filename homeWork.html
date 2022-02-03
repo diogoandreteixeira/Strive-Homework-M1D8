@@ -59,9 +59,11 @@
       */
 
       const changeTitle = function (newTitle) {
-        newTitle = document.getElementById("title-id").innerText = 'New Title'
+        let title = document.getElementById("title-id")
+        title.innerText = newTitle
       };
-      changeTitle()
+      changeTitle('New new title')
+
       /* EXERCISE 2
        Write a function for changing the class of the title of the page in "myHeading".
       */
